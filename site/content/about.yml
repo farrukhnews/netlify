@@ -1,0 +1,9 @@
+title: About Page Title
+intro: Our about page intro or team intro
+team:
+  - name: Farrukh
+    position: Dev
+    photo: /img/14_panadol_logo.png
+  - name: Ying
+    position: Dev
+    photo: /img/728-06a-img-1-marbles.svg
