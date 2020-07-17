@@ -25,6 +25,7 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
+        slug: 'home'
         file: "site/content/home.json"
         format: "json"
         fields:
