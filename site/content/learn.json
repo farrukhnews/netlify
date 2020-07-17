@@ -28,6 +28,11 @@
       "title": "COMMBANK",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel felis consequat elit ",
       "photo": "/img/14_panadol_logo.png"
+    },
+    {
+      "title": "Panadol",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel felis consequat elit ",
+      "photo": "/img/14_panadol_logo.png"
     }
   ],
   "lifestyle": [
