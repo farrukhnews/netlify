@@ -34,8 +34,6 @@ export const actions = {
     );
     let pages = files.keys().map(key => {
       let res = files(key);
-    //   console.log(res);
-      console.log(key.slice(2, -5));
       res.slug = key.slice(2, -5);
       return res;
     });

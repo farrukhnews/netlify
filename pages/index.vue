@@ -2,40 +2,16 @@
   <section>
     <div class="container">
      
-      <h1>Welcome</h1>
-
-    <section>
-      <h1 v-text="pages"></h1>
-      <!-- <h3 v-text="page.areas"></h3> -->
-    </section> 
-
-
-
-
-      <!-- <section class="content">
+      <h1 v-text="pageData.title">Welcome</h1>
+      <section class="content">
         <ul>
-            <li>
-                <div class="img"></div>
-                <h5>Brand Title</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et commodo velit. Etiam vitae venenatis lorem, eget blandit purus.</p>
-            </li>
-            <li>
-                <div class="img"></div>
-                <h5>Brand Title</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et commodo velit. Etiam vitae venenatis lorem, eget blandit purus.</p>
-            </li>
-            <li>
-                <div class="img"></div>
-                <h5>Brand Title</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et commodo velit. Etiam vitae venenatis lorem, eget blandit purus.</p>
-            </li>
-            <li>
-                <div class="img"></div>
-                <h5>Brand Title</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et commodo velit. Etiam vitae venenatis lorem, eget blandit purus.</p>
+            <li v-for="area in pageData.areas">
+                <div class="img"><img :src="area.photo" alt=""></div>
+                <h5 v-text="area.title">Brand Title</h5>
+                <p v-text="area.description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et commodo velit. Etiam vitae venenatis lorem, eget blandit purus.</p>
             </li>
         </ul>
-      </section> -->
+      </section>
     </div>
   </section>
 </template>
@@ -48,8 +24,14 @@ export default {
     };
   },
   computed: {
-    pages() {
-      return this.$store.state.pages;
+    pageData() {
+      let pages = this.$store.state.pages;
+      for (let i = 0; i < pages.length; ++i) {
+          if (pages[i].slug === "home"){
+            console.log(pages[i]);
+            return pages[i];
+          }
+      }
     }
   } 
 };
