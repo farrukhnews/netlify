@@ -40,6 +40,11 @@
       "title": "NAB",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel felis consequat elit ",
       "photo": "/img/14_panadol_logo.png"
+    },
+    {
+      "title": "Society One",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel felis consequat elit ",
+      "photo": "/img/14_panadol_logo.png"
     }
   ]
 }
