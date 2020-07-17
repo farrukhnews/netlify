@@ -1,0 +1,25 @@
+{
+  "title": "Welcome",
+  "areas": [
+    {
+      "title": "Learn",
+      "description": "Fusce at leo sed arcu elementum ultrices eu hendrerit lorem. Suspendisse pulvinar urna vel dui bibendum sodales.",
+      "photo": "/img/14_panadol_logo.png"
+    },
+    {
+      "title": "Explore",
+      "description": "Vestibulum finibus erat ac ligula tincidunt dapibus. Proin non sagittis leo, ac elementum enim. ",
+      "photo": "/img/14_panadol_logo.png"
+    },
+    {
+      "title": "Sell",
+      "description": "Aliquam sit amet auctor mi. Cras rhoncus, felis vel laoreet venenatis, sapien odio blandit neque, sed suscipit leo odio eu ipsum.",
+      "photo": "/img/14_panadol_logo.png"
+    },
+    {
+      "description": "Integer dolor elit, lacinia ac nunc nec, cursus posuere lectus. Donec eget urna a ipsum rhoncus mollis in vel lorem.",
+      "title": "FAQs",
+      "photo": "/img/14_panadol_logo.png"
+    }
+  ]
+}
