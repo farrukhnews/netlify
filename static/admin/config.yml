@@ -25,7 +25,7 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        slug: 'home'
+        slug: "home"
         file: "site/content/home.json"
         format: "json"
         fields:
@@ -40,6 +40,7 @@ collections:
       - label: "Learn Page"
         name: "learn"
         file: "site/content/learn.json"
+        slug: "learn"
         format: "json"
         fields:
           - {label: Title, name: title, widget: string}
