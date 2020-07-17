@@ -21,31 +21,46 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - label: "Pages"
     name: "pages"
-    format: 'json'
+    format: "json"
     files:
-      - label: "About Page"
-        name: "about"
-        file: "site/content/about.json"
+      - label: "Home Page"
+        name: "home"
+        file: "site/content/home.json"
+        format: "json"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
+          - label: "Key Areas"
+            name: areas
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: string}
               - {label: Photo, name: photo, widget: image}
-      - label: "Locations Page"
-        name: "locations"
-        format: 'json'
-        file: "site/content/locations.json"
+      - label: "Learn Page"
+        name: "learn"
+        file: "site/content/learn.json"
+        format: "json"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
+          - label: Business
+            name: business
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}  
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: string}
+              - {label: Photo, name: photo, widget: image}
+          - label: Travel
+            name: travel
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: string}
+              - {label: Photo, name: photo, widget: image}
+          - label: Lifestyle
+            name: lifestyle
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: string}
+              - {label: Photo, name: photo, widget: image}

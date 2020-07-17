@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
+    "js-yaml-loader": "1.2.2",
     "nuxt": "^2.13.0"
   },
   "devDependencies": {
