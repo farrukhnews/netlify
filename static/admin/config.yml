@@ -4,8 +4,7 @@ backend:
 
 media_folder: static/img
 public_folder: /img
-plugins:
-  - type: '@netlify/plugin-search-index'
+
 collections:
   - name: 'blog'
     label: 'Blog'

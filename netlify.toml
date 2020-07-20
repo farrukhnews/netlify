@@ -1,0 +1,5 @@
+[[plugins]]
+  package = netlify-plugin-search-index
+    [plugins.inputs] = 
+      generatedFunctionName = null
+      publishDirJSONFileName = site/content/mySearchIndex # you can use / to nest in a directory
