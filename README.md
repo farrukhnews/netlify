@@ -1,5 +1,9 @@
 # netlify-cms
 
+## Lastest Build Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/47811abe-ec14-45c6-9d3e-3eef5126303b/deploy-status)](https://app.netlify.com/sites/infallible-carson-dc2377/deploys)
+
+
 ## Build Setup
 
 ```bash
