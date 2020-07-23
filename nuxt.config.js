@@ -59,7 +59,9 @@ export default {
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  axios: {},
+ axios: {
+  // proxyHeaders: false
+},
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/

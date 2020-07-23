@@ -2,13 +2,23 @@
   <section>
     <div class="container">
       <h1>Search Results for XXX</h1>
+      <div class="loop" v-for="page in pageData">
+        <h2 class="data" v-text="page"></h2>
 
+      </div>
     </div>
   </section>
 </template>
 <script>
-
 export default {
+  computed: {
+    pageData() {
+      let pages = this.$store.state.searchResult;
+      for (let i = 0; i < pages.length; ++i) {
+          console.log(pages[i]);
+      }
+    },
+  }
 };
 </script>
 <style>

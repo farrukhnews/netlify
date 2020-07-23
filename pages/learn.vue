@@ -26,46 +26,57 @@
       <section class="content">
         <h3>BUSINESS</h3>
         <ul>
-            <li v-for="item in pageData.business">
-                <div class="img"><img :src="item.photo" alt=""></div>
-                <h5 v-text="item.title">Brand Title</h5>
-                <p v-text="item.description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et commodo velit. Etiam vitae venenatis lorem, eget blandit purus.</p>
-            </li>
+          <li v-for="item in pageData.business">
+            <div class="img"><img :src="item.photo" alt="" /></div>
+            <h5 v-text="item.title">Brand Title</h5>
+            <p v-text="item.description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse et commodo velit. Etiam vitae venenatis lorem, eget
+              blandit purus.
+            </p>
+          </li>
         </ul>
         <h3>TRAVEL</h3>
         <ul>
-            <li v-for="item in pageData.travel">
-                <div class="img"><img :src="item.photo" alt=""></div>
-                <h5 v-text="item.title">Brand Title</h5>
-                <p v-text="item.description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et commodo velit. Etiam vitae venenatis lorem, eget blandit purus.</p>
-            </li>
+          <li v-for="item in pageData.travel">
+            <div class="img"><img :src="item.photo" alt="" /></div>
+            <h5 v-text="item.title">Brand Title</h5>
+            <p v-text="item.description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse et commodo velit. Etiam vitae venenatis lorem, eget
+              blandit purus.
+            </p>
+          </li>
         </ul>
         <h3>LIFESTYLE</h3>
         <ul>
-            <li v-for="item in pageData.lifestyle">
-                <div class="img"><img :src="item.photo" alt=""></div>
-                <h5 v-text="item.title">Brand Title</h5>
-                <p v-text="item.description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et commodo velit. Etiam vitae venenatis lorem, eget blandit purus.</p>
-            </li>
-        </ul>                
+          <li v-for="item in pageData.lifestyle">
+            <div class="img"><img :src="item.photo" alt="" /></div>
+            <h5 v-text="item.title">Brand Title</h5>
+            <p v-text="item.description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse et commodo velit. Etiam vitae venenatis lorem, eget
+              blandit purus.
+            </p>
+          </li>
+        </ul>
       </section>
     </div>
   </section>
 </template>
 <script>
-
 export default {
   computed: {
     pageData() {
       let pages = this.$store.state.pages;
       for (let i = 0; i < pages.length; ++i) {
-          if (pages[i].slug === "learn"){
-            console.log(pages[i]);
-            return pages[i];
-          }
+        if (pages[i].slug === "learn") {
+          console.log(pages[i]);
+          return pages[i];
+        }
       }
-    }
-  } 
+    },
+  }
 };
 </script>
 <style>
@@ -87,11 +98,35 @@ h3 {
   text-align: center;
   text-transform: uppercase;
 }
-nav {display: flex; justify-content: center; margin: 1rem auto 3rem; font-weight: 700;}
-nav a {display: block;}
-nav img {margin: 0 auto;}
-nav span {display: block; margin: 0 auto;}
-.content ul{display: flex;}
-.content .img{display: block; width: 100%; height: 11rem; background: #ccc; margin-bottom: 1rem;}
-.content ul li{ list-style: none; padding: 1rem 0.5rem; text-align: center;}
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto 3rem;
+  font-weight: 700;
+}
+nav a {
+  display: block;
+}
+nav img {
+  margin: 0 auto;
+}
+nav span {
+  display: block;
+  margin: 0 auto;
+}
+.content ul {
+  display: flex;
+}
+.content .img {
+  display: block;
+  width: 100%;
+  height: 11rem;
+  background: #ccc;
+  margin-bottom: 1rem;
+}
+.content ul li {
+  list-style: none;
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
 </style>
