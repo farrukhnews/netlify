@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     async getData(value) {
-      const results = await fetch(`/.netlify/functions/search?search=${value}`);
+      const results = await fetch(`/.netlify/functions/search?search=${value}`).then(x => x.json());
       console.log(results);
     }
   },
